@@ -3,8 +3,9 @@ import { useEffect, useState } from 'react';
 import Admin from './Admin';
 import './App.css';
 
-const API_URL = 'http://localhost:8080/api/requests';
-const AUTH_URL = 'http://localhost:8080/api/auth';
+const API_URL = 'https://public-service-request-system-0q6p.onrender.com/api/requests';
+const AUTH_URL = 'https://public-service-request-system-0q6p.onrender.com/api/auth';
+
 
 function App() {
   const [showAdmin, setShowAdmin] = useState(false);
