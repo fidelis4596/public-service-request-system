@@ -15,11 +15,13 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://localhost:5173")
+                        .allowedOriginPatterns(
+                                "http://localhost:5173",
+                                "https://*.onrender.com"
+                        )
                         .allowedMethods("GET", "POST", "PATCH", "OPTIONS")
                         .allowedHeaders("*");
             }
         };
     }
 }
-
